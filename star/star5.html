@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5성</title>
+  <script>
+    let star = '*****';
+
+    for(let i = 0; i < 5; i++) {
+        let starsArray = star.split(''); // 문자열을 배열로 변환
+        // 배열에서 하나씩 요소를 출력
+
+        document.write(`${starsArray.join('')}<br>`);
+        
+        // 배열에서 마지막 요소를 제거
+        starsArray.pop();
+        star = starsArray.join(''); // 배열을 다시 문자열로 변환
+    }
+  </script>
+</head>
+<body>
+
+</body>
+</html>

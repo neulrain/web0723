@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>윤년계산기</title>
+  <script>
+
+  function isLeapYear(year) {
+      return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+  }
+
+  const year = Number(prompt('연도를 입력해주세요.','0000'))
+
+    if (isLeapYear(year)) {
+        alert(`${year}년은 윤년입니다.`);
+    } else {
+        alert(`${year}년은 윤년이 아닙니다.`);
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
